@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
 import Container from "../components/container"
 import styles from './about.module.css'
 
@@ -16,8 +14,6 @@ const User = props => (
 
 export default () => (
     <Container>
-        <Link to="/">Home</Link>
-        <Header headerText="About header" />
         <p>About page content.</p>
         <User
             username="Wendy"

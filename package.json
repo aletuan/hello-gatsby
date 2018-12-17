@@ -15,6 +15,7 @@
     "react-dom": "^16.5.1",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
+    "typography-theme-fairy-gates": "^0.16.18",
     "typography-theme-funston": "^0.16.18"
   }
 }
