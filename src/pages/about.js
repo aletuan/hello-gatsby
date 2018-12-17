@@ -20,14 +20,14 @@ export default () => (
         <Header headerText="About header" />
         <p>About page content.</p>
         <User
-            username="Jane Doe"
+            username="Wendy"
             avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-            excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            excerpt="I'm Wendy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         />
         <User
-            username="Bob Smith"
+            username="Andy"
             avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-            excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            excerpt="I'm Andy, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         />
     </Container>
 )
