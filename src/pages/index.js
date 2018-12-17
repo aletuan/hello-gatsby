@@ -5,13 +5,20 @@ export default () => (
     <Container>
         <div>
             <p>
-                Index page content [dummy]
+                Good day !
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Thanks you for the visiting. This is my personal website. 
+                It is a memo what I learn from software development, and other non-technical stuffs.
+                However, I also hope you could find some userful information from here.
+                If you have any feedback, drop me a message or send me an email to anhlt1983@gmail.com
+            </p>
+            <p>
                 <em>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    The best preparation for tomorrow is doing your best today.
                 </em>
+                <br />
+                <b style={{ float: `right` }}>H. Jackson Brown, Jr.</b>            
             </p>
         </div>
     </Container>
