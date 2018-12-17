@@ -1,16 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
 import Header from '../components/header'
+import Container from '../components/container'
 
 export default () => (
-    <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
-    {" "}
+    <Container>
         <Link to="/about">About</Link> _/\_/\_/\_ 
         <Link to="/contact">Contact</Link>
         <Header headerText="Index header" />
         <div>
             <p>
-                This is dummy content in the index.
+                Index page content [dummy]
             </p>
             <blockquote>
                 <p>
@@ -21,5 +21,5 @@ export default () => (
                 </p>
             </blockquote>
         </div>
-    </div>
+    </Container>
 )
