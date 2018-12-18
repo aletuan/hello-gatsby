@@ -3,7 +3,6 @@ module.exports = {
     title: `Web blog`,
   },
   plugins: [
-    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
