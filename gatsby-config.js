@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Web blog`,
+    title: `Blog`,
     siteUrl: `https://www.andyfiles.com/`,
   },
   plugins: [

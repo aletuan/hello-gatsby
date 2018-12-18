@@ -6,8 +6,7 @@ export default () => (
         <div>
             <p>
                 Good day !
-            </p>
-            <p>
+                <br />
                 Thanks you for the visiting. This is my personal website. 
                 It is a memo what I learn from software development, and other non-technical stuffs.
                 However, I also hope you could find some userful information from here.
