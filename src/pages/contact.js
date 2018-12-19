@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "../components/container"
-import { Button, Jumbotron, Glyphicon } from "react-bootstrap"
+import Button from "react-bootstrap/lib/Button"
+import Jumbotron from "react-bootstrap/lib/Jumbotron"
 
 export default () => (
     <Container>
@@ -12,8 +13,7 @@ export default () => (
         </p>
         <p>
             <Button bsStyle="primary">
-                <Glyphicon glyph="align-justify" />
-                Learn more...
+                Learn more
             </Button>
         </p>
         </Jumbotron>
