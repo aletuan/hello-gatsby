@@ -1,8 +1,8 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import { Header1 } from "./header"
 import styles from "./container.module.css"
 
 export default ({ data, children }) => (
@@ -32,7 +32,7 @@ export default ({ data, children }) => (
       <link rel="canonical" href={siteUrl} />
     </Helmet>
 
-    <Header title={title} />    
+    <Header1 title={title} />    
     <hr />
     {children}
   </div>

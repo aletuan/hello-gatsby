@@ -7,7 +7,7 @@ const ListLink = props => (
     </li>
 )
 
-export default ({ title }) => (
+export const Header1 = ({ title }) => (
     <header style={{ marginBottom: `1.5rem`, marginTop: `1.5rem` }}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
         <h3 style={{ display: `inline` }}>
