@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "andy-files",
+  "description": "A web blog from Andy",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
