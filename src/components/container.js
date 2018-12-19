@@ -1,7 +1,6 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import styles from "./container.module.css"
-import "./bootstrap.min.css"
 import { StaticQuery, Link, graphql } from "gatsby"
 
 const ListLink = props => (
