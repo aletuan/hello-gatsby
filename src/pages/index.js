@@ -1,12 +1,14 @@
 import React from "react"
 import Container from '../components/container'
+import { FaBeer } from "react-icons/fa";
 
 export default () => (
     <Container>
         <div>
             <p>
-                Good day !
+                Good day ! <FaBeer size={18} style={{ color: 'red' }} />
                 <br />
+
                 Thanks you for the visiting. This is my personal website. 
                 It is a memo what I learn from software development, and other non-technical stuffs.
                 However, I also hope you could find some userful information from here.
