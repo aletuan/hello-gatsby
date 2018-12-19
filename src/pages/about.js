@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "../components/container"
 import styles from './about.module.css'
+import { FaRocket } from "react-icons/fa";
 
 const User = props => (
     <div className={styles.user}>
@@ -14,7 +15,9 @@ const User = props => (
 
 export default () => (
     <Container>
-        <p>About page content.</p>
+        <p>
+            Launching blog page <FaRocket size={30} style={{ color: 'black' }} />
+        </p>
         <User
             username="Wendy"
             avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"

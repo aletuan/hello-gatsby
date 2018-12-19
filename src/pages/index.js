@@ -6,7 +6,8 @@ export default () => (
     <Container>
         <div>
             <p>
-                Good day ! <FaBeer size={18} style={{ color: 'red' }} />
+                Good day, <FaBeer size={30} style={{ color: 'black' }} />
+                <br />
                 <br />
 
                 Thanks you for the visiting. This is my personal website. 
