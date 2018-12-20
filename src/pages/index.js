@@ -11,7 +11,7 @@ export default () => (
     <Layout>
         <Container>
             <p className="lead">
-                Good day, <FaBeer size={30} style={{ color: 'black' }} />
+                Good day,
             </p>
             <p>
                 Thanks you for visiting. This is my personal website. 

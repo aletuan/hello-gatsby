@@ -35,7 +35,7 @@ export default class GBNavbar extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav navbar>
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
