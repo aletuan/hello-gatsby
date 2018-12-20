@@ -35,10 +35,10 @@ export default class GBNavbar extends React.Component {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/about">About</NavLink>
+                <NavLink href="/podcast">Podcast</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contact">Contact</NavLink>
+                <NavLink href="/blog">Blog</NavLink>
               </NavItem>                            
             </Nav>
           </Collapse>
