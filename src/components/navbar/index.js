@@ -53,7 +53,7 @@ export default class GBNavbar extends React.Component {
                 <NavLink href="/signin">Sign In</NavLink>
               </NavItem>             
               <Form>
-                <Input type="text" name="search" placeholder="Search blog" />
+                <Input type="text" style={{ background: '#EEEEEF' }} name="search" placeholder="Search blog" />
               </Form>
             </Nav>
           </Collapse>
