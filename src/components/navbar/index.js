@@ -43,6 +43,12 @@ export default class GBNavbar extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
+        <hr
+          style={{            
+            marginTop: "0px",
+            height: 0,
+          }}
+        />
       </div>
     );
   }
