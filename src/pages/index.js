@@ -20,7 +20,6 @@ export default () => (
                     However, I also hope you could find some userful information from here.
                     If you have any feedback, drop me a message or send me an email to <a href="mailto:anhlt1983@gmail.com">anhlt1983@gmail.com</a>
                 </p>
-                <hr className="my-2" />
                 <p>
                     <em>
                         The best preparation for tomorrow is doing your best today.
@@ -28,7 +27,7 @@ export default () => (
                     <br />
                     <b style={{ float: `right` }}>H. Jackson Brown, Jr.</b>                                   
                 </p>
-        </Jumbotron>
+            </Jumbotron>
         </Container>
     </Layout>
 )
