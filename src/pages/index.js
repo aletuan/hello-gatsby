@@ -4,6 +4,7 @@ import {
     Jumbotron, 
     Button,
 } from 'reactstrap';
+import { FaBeer } from "react-icons/fa";
 
 import Layout from '../components/layout';
 
@@ -11,11 +12,22 @@ export default () => (
     <Layout>
         <Container>
             <Jumbotron>
-                <p className="lead">This is a simple hero unit, a simple Jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr className="my-2" />
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                 <p className="lead">
-                    <Button color="primary">Learn More</Button>
+                    Good day, <FaBeer size={30} style={{ color: 'black' }} />
+                </p>
+                <p>
+                    Thanks you for the visiting. This is my personal website. 
+                    It is a memo what I learn from software development, and other non-technical stuffs.
+                    However, I also hope you could find some userful information from here.
+                    If you have any feedback, drop me a message or send me an email to <a href="mailto:anhlt1983@gmail.com">anhlt1983@gmail.com</a>
+                </p>
+                <hr className="my-2" />
+                <p>
+                    <em>
+                        The best preparation for tomorrow is doing your best today.
+                    </em>
+                    <br />
+                    <b style={{ float: `right` }}>H. Jackson Brown, Jr.</b>                                   
                 </p>
         </Jumbotron>
         </Container>
