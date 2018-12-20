@@ -3,9 +3,8 @@ import { Container, Card, CardText, CardBody, CardTitle, CardSubtitle } from 're
 import Link from 'gatsby-link'
 import Layout from '../components/layout'
 
-const HomePage = () => {
-    return (
-      <Layout>
+export default () => (
+    <Layout>
         <Container>
             <Card style={{marginBottom: 10}} key={12}>
               <CardBody>
@@ -15,8 +14,5 @@ const HomePage = () => {
               </CardBody>
             </Card>
         </Container>
-      </Layout>
-    )
+    </Layout>
 }
-  
-export default HomePage;
