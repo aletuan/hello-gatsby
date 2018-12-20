@@ -1,22 +1,22 @@
-import React from "react"
-import { Container, Button, Jumbotron } from "reactstrap"
+import React from 'react'
+import { Container, Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap'
+import Link from 'gatsby-link'
 import Layout from '../components/layout'
 
-export default () => (
-    <Layout>
+const HomePage = () => {
+    return (
+      <Layout>
         <Container>
-            <Jumbotron>
-            <h1>Hello, world!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
-            </p>
-            <p>
-                <Button color="danger">
-                    Learn more
-                </Button>
-            </p>
-            </Jumbotron>
+            <Card style={{marginBottom: 10}} key={12}>
+              <CardBody>
+                <CardTitle><Link to="/">Home</Link></CardTitle>
+                <CardSubtitle style={{marginBottom: 10}}>21/12/2018</CardSubtitle>
+                <CardText>Andy test</CardText>
+              </CardBody>
+            </Card>
         </Container>
-    </Layout>
-)
+      </Layout>
+    )
+}
+  
+export default HomePage;

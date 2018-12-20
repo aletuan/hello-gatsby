@@ -1,31 +1,22 @@
 import React from "react"
-import { Container } from "reactstrap"
-import { FaBeer } from "react-icons/fa";
-
+import { Container, Button, Jumbotron } from "reactstrap"
 import Layout from '../components/layout'
 
 export default () => (
     <Layout>
         <Container>
-            <div>
-                <p>
-                    Good day, <FaBeer size={30} style={{ color: 'black' }} />
-                    <br />
-                    <br />
-
-                    Thanks you for the visiting. This is my personal website. 
-                    It is a memo what I learn from software development, and other non-technical stuffs.
-                    However, I also hope you could find some userful information from here.
-                    If you have any feedback, drop me a message or send me an email to <a href="mailto:anhlt1983@gmail.com">anhlt1983@gmail.com</a>
-                </p>
-                <p>
-                    <em>
-                        The best preparation for tomorrow is doing your best today.
-                    </em>
-                    <br />
-                    <b style={{ float: `right` }}>H. Jackson Brown, Jr.</b>            
-                </p>
-            </div>
+            <Jumbotron>
+            <h1>Hello, world!</h1>
+            <p>
+                This is a simple hero unit, a simple jumbotron-style component for calling
+                extra attention to featured content or information.
+            </p>
+            <p>
+                <Button color="danger">
+                    Learn more
+                </Button>
+            </p>
+            </Jumbotron>
         </Container>
     </Layout>
 )
