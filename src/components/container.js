@@ -48,7 +48,9 @@ export default ({ data, children }) => (
         <ListLink to="/contact/">Contact</ListLink>
       </ul>
     </header>
+
     <hr />
+
     {children}
   </div>
   )}
