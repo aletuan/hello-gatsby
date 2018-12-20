@@ -10,6 +10,7 @@ import {
 } from 'reactstrap';
 
 import './index.scss'
+import logo from "./logo.png"
 
 export default class GBNavbar extends React.Component {
   constructor(props) {
@@ -29,7 +30,9 @@ export default class GBNavbar extends React.Component {
     return (
       <div>
         <Navbar color="faded" light expand="sm">
-          <NavbarBrand href="/">BLOG</NavbarBrand>
+          <NavbarBrand href="/">
+            <img src={logo} alt="" />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

@@ -3,7 +3,11 @@
     margin: 0px auto;
     font-size: 16px;
 }
-  
+
+.navbar a img {
+    margin-bottom: 0px;
+}
+
 .navbar-nav {
     flex-direction: column;
   
@@ -11,3 +15,4 @@
       padding-left: 10px; 
     }
 }
+
