@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from '../components/layout'
 import { Container, Button, Jumbotron } from "reactstrap"
+import Layout from '../components/layout'
 
 export default () => (
     <Layout>
