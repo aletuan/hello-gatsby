@@ -1,8 +1,7 @@
 import React from "react"
 import {
     Container,
-    Jumbotron, 
-    Button,
+    Jumbotron,
 } from 'reactstrap';
 import { FaBeer } from "react-icons/fa";
 
