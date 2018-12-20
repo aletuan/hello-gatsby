@@ -7,6 +7,8 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Form,
+  Input,
 } from 'reactstrap';
 
 import './index.scss'
@@ -46,14 +48,16 @@ export default class GBNavbar extends React.Component {
                 <NavLink href="/blog">Blog</NavLink>
               </NavItem>                            
             </Nav>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/signin">Sign In</NavLink>
+              </NavItem>             
+              <Form>
+                <Input type="text" name="search" placeholder="Search blog" />
+              </Form>
+            </Nav>
           </Collapse>
         </Navbar>
-        <hr
-          style={{            
-            marginTop: "0px",
-            height: 0,
-          }}
-        />
       </div>
     );
   }
