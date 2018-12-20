@@ -1,0 +1,12 @@
+.navbar {
+    max-width: 1000px;
+    margin: 0px auto,
+}
+  
+.navbar-nav {
+    flex-direction: column;
+  
+    & > * {
+      padding-left: 10px; 
+    }
+}

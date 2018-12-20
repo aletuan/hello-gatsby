@@ -9,6 +9,8 @@ import {
     NavLink,
 } from 'reactstrap';
 
+import './index.scss'
+
 export default class GBNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -26,7 +28,7 @@ export default class GBNavbar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light expand="md">
+        <Navbar color="faded" light expand="sm">
           <NavbarBrand href="/">BLOG</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

@@ -104,11 +104,3 @@
 .container {
   max-width: 1000px;
 }
-
-.navbar-nav {
-  flex-direction: column;
-
-  & > * {
-    padding-left: 10px; 
-  }
-}
