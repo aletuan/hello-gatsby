@@ -19,7 +19,7 @@ const Banner = () => (
                         The best preparation for tomorrow is doing your best today.
                     </em>
                     <br />
-                    <b style={{ float: `right` }}>H. Jackson Brown, Jr.</b>                                   
+                    <b>H. Jackson Brown, Jr.</b>                                   
                 </p>
             </CardBody>
         </Card>
