@@ -13,7 +13,6 @@
     "reactstrap": "^6.4.0",
     "bootswatch": "4.*",
     "gatsby-plugin-sass": "^2.0.6",
-    "prismjs": "^1.15.0",
     "gatsby": "^2.0.33",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-typography": "^2.2.2",

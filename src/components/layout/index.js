@@ -3,12 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import GBNavbar from '../navbar'
-// code syntax-highlighting theme
-// feel free to change it to another one
-import 'prismjs/themes/prism-twilight.css'
-
-// main site style
-import './index.scss'
 
 const TemplateWrapper = ({ children, data }) => {
   return (
