@@ -6,7 +6,7 @@ import {
 } from 'reactstrap';
 
 const Banner = () => (
-    <Container>
+    <Container style={{padding: "0 20px 0 20px", }}>
         <Card>
             <CardBody>                  
                 <p>
