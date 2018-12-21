@@ -2,21 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import GBNavbar from '../navbar'
+import Navbar from '../navbar'
 
-const TemplateWrapper = ({ children, data }) => {
+const Layout = ({ children, data }) => {
   return (
     <StaticQuery query={pageQuery} render={data => (
-      <div className='App'>
+      <div>
         <Helmet title={data.site.siteMetadata.title} />
-        <GBNavbar />
+        <Navbar />
         <div className='pageContent'>{children}</div>
       </div>
     )} />
   )
 }
 
-TemplateWrapper.propTypes = {
+Layout.propTypes = {
   children: PropTypes.object,
 }
 
@@ -30,4 +30,4 @@ const pageQuery = graphql`
   }
 `
 
-export default TemplateWrapper
+export default Layout
