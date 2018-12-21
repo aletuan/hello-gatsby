@@ -1,11 +1,11 @@
 .navbar {
     max-width: 95%;
     @media only screen and (max-width: 600px) {
-        max-width: 85%;
+        max-width: 90%;
     }
 
     margin: 0px auto;
-    font-size: 12px;
+    font-size: 16px;
     padding: 0px !important;
 }
 
@@ -14,7 +14,7 @@
     margin-left: 0px;
   
     & > * {
-        margin: 0px;
+        margin: 5px;
     }
 }
 
