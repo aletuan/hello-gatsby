@@ -10,6 +10,10 @@ import {
     Col,
 } from "reactstrap"
 
+import { 
+    isBrowser,
+}
+from "react-device-detect"
 
 
 // TODO: Playing button, featuring (author),  meta (discuss, tag)
@@ -20,26 +24,43 @@ const Toolbar = () => (
 )
 
 const Article =  ({ title, description, imgUrl, sourceUrl }) => {
+    if (isBrowser) {
+        return (
+            <Card className="border-0">
+                <CardBody>    
+                    <Row>
+                        <Col md={{ size: 1, offset: 1 }} style={{ paddingTop: "20px" }} >
+                            <img src={imgUrl} style={{ borderRadius: "3px" }} with="50" height="50" />
+                        </Col>
+                        <Col md={{ size: 8 }} >
+                            <p style={{ marginBottom: "0px" }}>
+                                <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
+                            </p>
+                            <CardTitle>
+                                {title}
+                            </CardTitle>
+                            {description}
+                        </Col>
+                    </Row> 
+                </CardBody>
+            </Card>                                 
+        );
+    }
+
     return (
         <Card className="border-0">
-            <CardBody>    
-                <Row>
-                    <Col md={{ size: 1, offset: 1 }} style={{ paddingTop: "20px" }} >
-                        <img src={imgUrl} style={{ borderRadius: "3px" }} with="50" height="50" />
-                    </Col>
-                    <Col md={{ size: 8 }} >
-                        <p style={{ marginBottom: "0px" }}>
-                            <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
-                        </p>
-                        <CardTitle>
-                            {title}
-                        </CardTitle>
-                        {description}
-                    </Col>
-                </Row> 
-            </CardBody>
-        </Card>                                 
-    );   
+            <Row>
+                <CardBody>
+                <p>
+                    <img src={imgUrl} style={{ borderRadius: "3px", padding: "5px 10px 0 0" }} with="30" height="30" />
+                    <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
+                </p>
+                <h5>{title}</h5>
+                {description}                    
+                </CardBody>
+            </Row> 
+        </Card>            
+    )
 }
 
 Article.propTypes = {
