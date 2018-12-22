@@ -11,6 +11,7 @@ import {
 } from "reactstrap"
 
 
+
 // TODO: Playing button, featuring (author),  meta (discuss, tag)
 const Toolbar = () => (
     <CardFooter>
@@ -23,10 +24,10 @@ const Article =  ({ title, description, imgUrl, sourceUrl }) => {
         <Card className="border-0">
             <CardBody>    
                 <Row>
-                    <Col md={{ size: 1 }} style={{ paddingTop: "20px" }} >
+                    <Col md={{ size: 1, offset: 1 }} style={{ paddingTop: "20px" }} >
                         <img src={imgUrl} style={{ borderRadius: "3px" }} with="50" height="50" />
                     </Col>
-                    <Col md={{ size: 11 }} >
+                    <Col md={{ size: 8 }} >
                         <p style={{ marginBottom: "0px" }}>
                             <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
                         </p>
