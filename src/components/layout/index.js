@@ -12,7 +12,7 @@ const Layout = ({ children, data }) => {
       <div>
         <Helmet title={data.site.siteMetadata.title} />
         <Navbar />
-        <div className='pageContent'>{children}</div>
+        <div>{children}</div>
       </div>
     )} />
   )
