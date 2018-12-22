@@ -7,6 +7,7 @@ import {
     CardHeader,
     CardFooter,
     CardTitle,
+    CardSubtitle,
     Row,
     Col,
 } from "reactstrap"
@@ -20,15 +21,17 @@ const Toolbar = () => (
 
 const Article =  ({ title, description, imgUrl }) => {
     return (
-        <Row style={{ marginTop: "10px" }}>
+        <Row>
             <Col>
-                <Card>
+                <Card className="border-0">
                     <CardBody>
-                        <p style={{ alignItems: "center", display: "flex", margin: "0 0 10px" }}>
-                            <img src={imgUrl} style={{ margin: "2px 10px 10px 0px", borderRadius: "3px" }} with="50" height="50" />
+                        <p>
+                            <img src={imgUrl} style={{ margin: "2px 10px 0px 0px", borderRadius: "3px" }} with="50" height="50" />
                             <a style={{ textDecoration: "none", color: "#101820" }} href="https://www.github.com">github.com</a>
                         </p>
-                        <h2 style={{ fontSize: "1.25rem", lineHeight: "1.25rem", margin: "10px 0"}} >{title}</h2>
+                        <CardTitle>
+                            {title}
+                        </CardTitle>
                         {description}
                     </CardBody>
                     <Toolbar />
