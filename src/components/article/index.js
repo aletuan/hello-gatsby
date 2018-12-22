@@ -5,7 +5,15 @@ import {
     Card,
     CardBody,
     CardHeader,
+    CardFooter,
 } from "reactstrap"
+
+// TODO: Playing button, featuring (author),  meta (discuss, tag)
+const Toolbar = () => (
+    <CardFooter>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </CardFooter>
+)
 
 const Article =  ({ title, description }) => {
     return (                   
@@ -14,8 +22,9 @@ const Article =  ({ title, description }) => {
                 {title}
             </CardHeader>
             <CardBody>
-                {description}
+                {description}                
             </CardBody>
+            <Toolbar />
         </Card>                       
     );   
 }
