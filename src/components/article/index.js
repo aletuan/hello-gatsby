@@ -51,8 +51,8 @@ const Article =  ({ title, description, imgUrl, sourceUrl }) => {
         <Card className="border-0">
             <Row>
                 <CardBody>
-                <p>
-                    <img src={imgUrl} style={{ borderRadius: "3px", padding: "5px 10px 0 0" }} with="30" height="30" />
+                <p style={{ marginBottom: "0px" }}>
+                    <img src={imgUrl} style={{ borderRadius: "3px", paddingRight: "10px", marginTop: "10px" }} with="30" height="30" />
                     <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
                 </p>
                 <h5>{title}</h5>
