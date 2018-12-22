@@ -4,20 +4,25 @@ import PropTypes from 'prop-types'
 import { 
     Card,
     CardBody,
+    CardHeader,
 } from "reactstrap"
 
-const Article =  ({ title }) => {
+const Article =  ({ title, description }) => {
     return (                   
         <Card style={{ margin: "20px"}}>
-            <CardBody>
+            <CardHeader>
                 {title}
+            </CardHeader>
+            <CardBody>
+                {description}
             </CardBody>
         </Card>                       
     );   
 }
 
 Article.propTypes = {
-    name: PropTypes.string
+    title: PropTypes.string,
+    description: PropTypes.string,
 };
 
 export default Article;
