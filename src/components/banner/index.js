@@ -16,10 +16,11 @@ const Banner = () => (
                 </p>
                 <p>
                     <em>
-                        The best preparation for tomorrow is doing your best today.
-                    </em>
-                    <br />
-                    <b>H. Jackson Brown, Jr.</b>                                   
+                    /* 
+                        When I wrote this, only God and I understood what I was doing
+                        Now, only God knows
+                    */
+                    </em>                                  
                 </p>
             </CardBody>
         </Card>

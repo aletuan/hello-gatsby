@@ -12,7 +12,7 @@ import {
 } from 'reactstrap';
 
 import './index.scss'
-import logo from "./logo.png"
+import logo from "./logo2.png"
 
 export default class GBNavbar extends React.Component {
   constructor(props) {
@@ -33,7 +33,7 @@ export default class GBNavbar extends React.Component {
       <div>
         <Navbar color="faded" light expand="sm">
           <NavbarBrand href="/">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" height="50" width="50" />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
