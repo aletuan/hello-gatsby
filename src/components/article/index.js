@@ -4,13 +4,12 @@ import PropTypes from 'prop-types'
 import { 
     Card,
     CardBody,
-    CardHeader,
     CardFooter,
     CardTitle,
-    CardSubtitle,
     Row,
     Col,
 } from "reactstrap"
+
 
 // TODO: Playing button, featuring (author),  meta (discuss, tag)
 const Toolbar = () => (
@@ -19,25 +18,26 @@ const Toolbar = () => (
     </CardFooter>
 )
 
-const Article =  ({ title, description, imgUrl }) => {
+const Article =  ({ title, description, imgUrl, sourceUrl }) => {
     return (
-        <Row>
-            <Col>
-                <Card className="border-0">
-                    <CardBody>
-                        <p>
-                            <img src={imgUrl} style={{ margin: "2px 10px 0px 0px", borderRadius: "3px" }} with="50" height="50" />
-                            <a style={{ textDecoration: "none", color: "#101820" }} href="https://www.github.com">github.com</a>
+        <Card className="border-0">
+            <CardBody>    
+                <Row>
+                    <Col md={{ size: 1 }} style={{ paddingTop: "20px" }} >
+                        <img src={imgUrl} style={{ borderRadius: "3px" }} with="50" height="50" />
+                    </Col>
+                    <Col md={{ size: 11 }} >
+                        <p style={{ marginBottom: "0px" }}>
+                            <a style={{ textDecoration: "none", color: "#101820" }} href={sourceUrl}>{sourceUrl}</a>
                         </p>
                         <CardTitle>
                             {title}
                         </CardTitle>
                         {description}
-                    </CardBody>
-                    <Toolbar />
-                </Card>
-            </Col>
-        </Row>                                       
+                    </Col>
+                </Row> 
+            </CardBody>
+        </Card>                                 
     );   
 }
 
