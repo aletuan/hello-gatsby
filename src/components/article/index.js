@@ -18,8 +18,8 @@ from "react-device-detect"
 
 // TODO: Playing button, featuring (author),  meta (discuss, tag)
 const Toolbar = () => (
-    <CardFooter>
-        <a href="#" class="btn btn-primary">Toolbar</a>
+    <CardFooter style={{ marginLeft: 0, paddingLeft: 0, border: 0, background: '#fff' }}>
+        <a href="#" class="btn btn-secondary">Play</a>
     </CardFooter>
 )
 
@@ -40,8 +40,13 @@ const Article =  ({ title, description, imgUrl, sourceUrl }) => {
                                 {title}
                             </CardTitle>
                             {description}
+                        </Col>                        
+                    </Row>
+                    <Row>
+                        <Col md={{ size: 8, offset: 2 }}>
+                            <Toolbar />
                         </Col>
-                    </Row> 
+                    </Row>
                 </CardBody>
             </Card>                                 
         );
